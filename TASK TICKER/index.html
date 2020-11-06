@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Task Ticker</title>
+    <style>
+        body {
+            background-color: #e9c46a;
+        }
+    </style>
+</head>
+
+<!-- PAGE HEADER -->
+<div id="header">
+    <h1>Task Ticker
+        <i>✓</i>
+    </h1>
+</div>
+
+<!-- BACK TO TOP ARROW -->
+
+
+<div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" id="arrowUP"></script>
+    <script>
+        addBackToTop({
+            diameter: 56,
+            backgroundColor: 'rgb(40, 71, 83)',
+            textColor: '#fff'
+        })
+    </script>
+</div>
+
+
+<!-- FORM USER INPUT -->
+
+<body>
+
+
+
+    <div class="row">
+        <form>
+            <div class="form-group" id="form">
+                <label for="inputName">Name:</label>
+                <input id="userName" type="text" class="form-control" placeholder="e.g John Smith"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inputDescription">Description:</label>
+                <input id="taskDescription" type="text" class="form-control" placeholder="e.g Finish Web Portfolio"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inputAssignedTo ">Assigned to:</label>
+                <input type="text" class="form-control" id="inputAssignedTo" placeholder="e.g Sarah Johnson">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label for="inputDate">Due Date:</label>
+                <input type="date" class="form-control" id="DueDate">
+                </input>
+            </div>
+            <div class="form-group">
+                <label for="inputStatus">Status:</label>
+                <select class="custom-select custom-select-sm" id="inputStatus">
+                    <option selected><h6>Select...</h6></option>
+                    <option value="TO-DO">TO-DO</option>
+                    <option value="IN-PROGRESS">IN-PROGRESS</option>
+                    <option value="REVIEW">REVIEW</option>
+                    <option value="DONE">DONE</option>
+                  </select>
+            </div>
+            <div class="submitBtn">
+                <button type="button" class="btn btn-primary" id="addItemButton" job="add">Submit</button>
+            </div>
+        </form>
+
+
+
+        <!-- LIST ITEMS -->
+        <div class="col-md-5">
+            <div class="list-group" id="listDisplay">
+                <!-- this is where tasks will pop-->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SORT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">TO-DO</a>
+            <a class="dropdown-item" href="#">IN-PROGRESS</a>
+            <a class="dropdown-item" href="#">REVIEW</a>
+            <a class="dropdown-item" href="#">DONE</a>
+        </div>
+    </div> -->
+
+    <!-- CARDS -->
+
+
+    <div class="row" id="cardDisplay">
+
+    </div>
+
+
+
+    <br>
+
+
+    <footer>
+        <h6>Created by Kimberley Cerise Diep™</h6>
+    </footer>
+
+
+</body>
+<script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/8b56fb61c6.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+
+</html>

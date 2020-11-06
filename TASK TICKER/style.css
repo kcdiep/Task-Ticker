@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* PAGE BCKGROUND COL */
+
+body {
+    background-color: #e9c46a;
+}
+
+
+/* PAGE HEADER */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    padding: 1%;
+    text-align: start;
+}
+
+#header {
+    height: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #264653;
+    color: #ffffff;
+    width: 105%
+}
+
+i {
+    color: #2a9d8f;
+}
+
+
+/* FORM */
+
+form {
+    width: 30%;
+    margin-left: 15%;
+    padding: 2%;
+    background-color: #f4a261;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* form button */
+
+#addItemButton {
+    background-color: #e95858;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    border-style: none;
+    font-size: 15px;
+    float: inline-end;
+}
+
+#addItemButton:hover {
+    color: white;
+    background-color: #f08383;
+}
+
+
+/* TASK LIST */
+
+li .list-group-item {
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#status {
+    margin-bottom: 10%;
+}
+
+#listItems {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #2a9d90d8;
+    color: white;
+    /* background: url("Sprite.png") right no-repeat; */
+}
+
+
+/* listgroup */
+
+#listDisplay {
+    width: 90%;
+    margin-left: 10%;
+}
+
+#statdate {
+    text-align: right;
+}
+
+p {
+    font-size: medium;
+    text-align: left;
+}
+
+.list-group-flush {
+    border-style: none;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+}
+
+
+/* CARDS */
+
+.row {
+    margin-top: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    background-blend-mode: soft-light;
+}
+
+#cardhead {
+    background-color: #2a9d90e3;
+}
+
+
+/* UPDATE BUTTON */
+
+.relative {
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    margin: 10px;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+#rfrshbtn {
+    justify-content: flex;
+    background-color: #88d3ca;
+    border-style: none;
+    width: 40%;
+}
+
+#rfrshbtn:hover {
+    background-color: #4f6d79;
+}
+
+
+/* TICK BUTTON (DELETION) */
+
+#tickbtn {
+    justify-content: flex;
+    background-color: #264653;
+    border-style: none;
+    width: 40%;
+}
+
+#tickbtn:hover {
+    background-color: #88d3cac9;
+}
+
+
+/* SAVE BUTTON */
+
+#saveUpdate {
+    background-color: #f08383;
+    border-style: solid;
+    text-align: center;
+    text-decoration: none;
+    border-style: none;
+    font-size: 15px;
+    float: inline-end;
+}
+
+#saveUpdate:hover {
+    color: white;
+    background-color: #e95858;
+}
+
+
+/* FOOTER*/
+
+footer {
+    text-align: center;
+    margin-top: 10%;
+}
